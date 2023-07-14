@@ -15,7 +15,7 @@
 - In the search bar "type azure function" and select.
 - In the next window provide your application a name and Click the Create button
 - A new window appears, select "HTTPS Trigger"- this is selected because we want our app to be seen on the browser).
-- Click the create button and wait for our application to be created.
+- Click the Create button and wait for our application to be created.
 
  
  We have created our Function app. To code a simple sum application that can add two numbers x and y, we follow his guide.
@@ -42,5 +42,18 @@ The ParseInt method parses a value as a string and returns an Integer.
 - In the function Instance window, select your existing subscription.
 - Click the publish button.
 
+### Testing your Function App on A Browser.  
+- Open the Azure portal and select Function app from the home screen.
+- Click on the App to open it and copy the URL.
+- paste the copied URL on a browser, and give "x" and "y" a value.
+- Example on your browser screen `https://joscalculatorfunctionapp.azurewebsites.net/api/JoeCalcFunctApp?code=VwTTBZ0K9RQv_Lpa5-wl5Qs1X1nbeXaNrTZchmYU-T2FAzFu7qrymA==&x=400%20&y=200`
 
-We have successfully published to Azure, open your Azure application and find the Function App resource to view your App.
+### Pushing Files To GitHub  
+- Log in to your GitHub account, on the dashboard click the "New" button.
+- In the create repository, give the file a name. Make sure the Readme button is ticked, and the repository is Public.
+- Open your Azure portal , then the function App, scroll down to deployment and click open.
+- Select deployment center, for "Source",select the drop-down arrow and select Github and select"Authorize" button below.
+- Click the authorize azure application button and enter your password.
+- On your Azure Function App, select and click deploy. Wait for the process
+Congratulation you hav succeded in deploying your first Function applicaton to Azure.
+
